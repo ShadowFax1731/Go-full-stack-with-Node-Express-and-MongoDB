@@ -12,8 +12,8 @@ const app = express();
 //connecting to database
 mongoose
   .connect(
-    "mongodb+srv://rachit:N-b693sHHyfqzBr@cluster0-kcdro.mongodb.net/test?retryWrites=true&w=majority"
-  )
+    "mongodb+srv://<username>:<password>@cluster0-kcdro.mongodb.net/test?retryWrites=true&w=majority"
+  ) //add your username and password here and then connect to the database.
   .then(() => {
     console.log("Successfully connected to MongoDB Atlas!");
   })
